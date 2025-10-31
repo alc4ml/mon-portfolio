@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'magiestra';
+    src: url('./assets/fonts/Magiesta-VGpzx.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'glamor';
+    src: url('./assets/fonts/Glamor-MediumExtended.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+  @font-face {
+    font-family: 'southampton';
+    src: url('./assets/fonts/Southampton.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
