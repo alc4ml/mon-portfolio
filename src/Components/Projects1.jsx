@@ -67,12 +67,12 @@ const cardVariants = {
 
 const Projects1 = () => {
   return (
-    <section className="bg-[#111132] text-white pt-11 pb-5 px-0 md:px-0 sm:px-0">
+    <section id="projects" className="bg-[#111132] text-white pt-11 pb-5 px-0 md:px-0 sm:px-0">
       <div className="max-w-screen-xl mx-auto">
         <div className="flex justify-between items-center mb-12">
           <h2 className="text-3xl font-semibold text-left font-heading mb-6">Projects</h2>
         </div>
-
+        
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -112,11 +112,11 @@ const Projects1 = () => {
                   ))}
                 </div>
               </div>
-
+                  
               {/* GitHub Icon (if applicable) */}
               {proj.github === "yes" && (
                 <a
-                  href="#"
+                  href="#projects"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="absolute bottom-3 right-3 text-gray-400 hover:text-white transition"

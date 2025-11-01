@@ -9,7 +9,7 @@ import Projects1 from "./Components/Projects1";
 import Skills from "./Components/Skills";
 import CertificationsSection from "./Components/CertificationsSection";
 import Awards from "./Components/Awards";
-import Experience from "./Experience";
+import Experience from "./Components/Experience";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import ContactSection from "./Components/ContactSection";

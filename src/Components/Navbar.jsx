@@ -12,10 +12,10 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 backdrop-blur bg-[#03030a]/80 shadow-sm">
-      <div className="max-w-screen-xl mx-auto px-4 md:px-32 py-4 flex items-center justify-between">
+      <div className="max-w-screen-xl mx-auto px-4 md:px-32 py-1 flex items-center justify-between">
         {/* Logo / Nom */}
         <div className="text-green-400 font-south text-3xl tracking-wide pb-4">
-          Orelis
+          <a href="#home3">Orelis</a>
         </div>
 
         {/* Liens */}

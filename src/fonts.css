@@ -1,21 +1,28 @@
 @font-face {
     font-family: 'magiestra';
-    src: url('./assets/fonts/Magiesta-VGpzx.ttf') format('opentype');
+    src: url('/fonts/Magiesta-VGpzx.ttf') format('opentype');
     font-weight: normal;
     font-style: normal;
   }
   
   @font-face {
     font-family: 'glamor';
-    src: url('./assets/fonts/Glamor-MediumExtended.otf') format('opentype');
+    src: url('/fonts/Glamor-MediumExtended.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
   }
   
 
   @font-face {
-    font-family: 'southampton';
-    src: url('./assets/fonts/Southampton.ttf') format('opentype');
+    font-family: 'south';
+    src: url('/fonts/Southampton.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'usy';
+    src: url('/fonts/Unusefully.ttf') format('opentype');
     font-weight: normal;
     font-style: normal;
   }

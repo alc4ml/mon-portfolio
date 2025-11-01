@@ -11,7 +11,8 @@ export default {
         serif: ['"Merriweather"', 'serif'],
         mono: ['"Fira Code"', 'monospace'],
         magiestra: ['Magiestra', 'sans-serif'],
-        south: ['south', 'cursive'],
+        south: ['"south"', 'cursive'],
+        usy : ['"usy"', 'system-ui']
       },
     },
   },

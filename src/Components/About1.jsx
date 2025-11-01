@@ -1,12 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
-import profileImg from "../assets/arrow.jpg"; // Remplace par ton image
-import a2 from "../assets/2.jpeg"
+
+
 
 const About1 = () => {
   return (
-    <section className="bg-[#111132] text-white sm:px-0 pt-7 md:px-16">
-      <div className="max-w-6xl mx-auto">
+    <section id="about" className="bg-[#111132] text-white sm:px-0 pt-7 ">
+      <div className="max-w-screen-xl mx-auto">
         {/* Section Title */}
         <h2 className="text-3xl font-semibold text-left font-heading mb-6">
           About
@@ -25,7 +25,7 @@ const About1 = () => {
           >
             <div className="relative w-80 h-96 bg-[#0b0b2b] overflow-hidden [clip-path:polygon(10%_0%,100%_0%,100%_90%,90%_100%,0%_100%,0%_10%)] shadow-lg">
               <img
-                src={a2}
+                src="2.jpeg"
                 alt="Marcel"
                 className="w-full h-full object-cover grayscale contrast-125"
               />
@@ -34,7 +34,7 @@ const About1 = () => {
 
           {/* Text content */}
           <motion.div
-            className="flex-1 text-center lg:text-left space-y-6"
+            className="flex-1 text-center lg:text-left space-y-6 " 
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{
@@ -47,7 +47,7 @@ const About1 = () => {
             <h2 className="text-3xl md:text-4xl font-bold leading-snug">
               I am <span className="font-magiestra">Marcel Morel Adjalla</span>
             </h2>
-            <p className="text-white text-lg text-left sm:max-w-prose sm:mx-auto leading-relaxed">
+            <div className="text-white text-lg text-left max-w-9xl  leading-relaxed">
               My academic background in a few words? <br /><br />
               Preparatory classes at the Institute of Mathematics and Physical Sciences (IMSP),
               followed by a specialized Bachelor’s degree in Computer Science. <br /><br />
@@ -58,7 +58,7 @@ const About1 = () => {
               Following this experience, my growing interest in applied research;
               particularly in Artificial Intelligence and Data Science naturally led me to
               pursue the Master in Data Mathematics, which I am currently enrolled in.
-            </p>
+            </div>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

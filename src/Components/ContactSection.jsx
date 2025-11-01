@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactSection = () => {
   return (
-    <section className="bg-[#111132] pt-0 pb-4 px-6 md:px-0 text-white">
+    <section id ="contact" className="bg-[#111132] pt-0 pb-4 px-6 md:px-0 text-white">
       <div className="max-w-screen-md mx-auto">
         {/* Titre principal */}
         <h2 className="text-3xl font-bold text-center font-heading mb-10">

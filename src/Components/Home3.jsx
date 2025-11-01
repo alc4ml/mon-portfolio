@@ -1,60 +1,65 @@
 import React from "react";
 import { motion } from "framer-motion";
-import profilePic from "../assets/arrow.jpg"; // Remplace par ta photo
 import { FaLinkedin, FaGithub, FaEnvelope, FaDiscord } from "react-icons/fa";
-import morel1 from "../assets/1.jpeg"
 
-const roles = ["Data Scientist", "Research Scientist", "Machine learning Engineer"];
+const roles = ["Data Scientist", "Research Scientist", "Machine Learning Engineer"];
 
 const Home3 = () => {
   const [index, setIndex] = React.useState(0);
   const [displayText, setDisplayText] = React.useState("");
+  const timeouts = React.useRef([]);
 
   React.useEffect(() => {
     const currentRole = roles[index];
     let i = 0;
 
     const typingDelay = 100;
-    const erasingDelay = 100;
+    const erasingDelay = 50;
     const pauseAfterTyping = 1500;
-    const pauseAfterErasing = 300;
+    const pauseAfterErasing = 500;
 
     const type = () => {
       if (i <= currentRole.length) {
         setDisplayText(currentRole.slice(0, i));
         i++;
-        setTimeout(type, typingDelay);
+        timeouts.current.push(setTimeout(type, typingDelay));
       } else {
-        setTimeout(() => {
-          let j = currentRole.length;
-          const erase = () => {
-            if (j >= 0) {
-              setDisplayText(currentRole.slice(0, j));
-              j--;
-              setTimeout(erase, erasingDelay);
-            } else {
-              setTimeout(() => {
-                setIndex((prev) => (prev + 1) % roles.length);
-              }, pauseAfterErasing);
-            }
-          };
-          erase();
-        }, pauseAfterTyping);
+        timeouts.current.push(setTimeout(erase, pauseAfterTyping));
       }
     };
 
+    const erase = () => {
+      let j = currentRole.length;
+      const eraseChar = () => {
+        if (j >= 0) {
+          setDisplayText(currentRole.slice(0, j));
+          j--;
+          timeouts.current.push(setTimeout(eraseChar, erasingDelay));
+        } else {
+          timeouts.current.push(setTimeout(() => {
+            setIndex((prev) => (prev + 1) % roles.length);
+          }, pauseAfterErasing));
+        }
+      };
+      eraseChar();
+    };
+
     type();
+
+    return () => {
+      // Nettoyage : annule tous les timeouts
+      timeouts.current.forEach(clearTimeout);
+      timeouts.current = [];
+    };
   }, [index]);
 
   return (
-    <section className="relative w-full h-screen bg-[#111132] text-white overflow-hidden">
-      {/* Glow Background */}
+    <section id="home" className="relative w-full h-screen bg-[#111132] text-white overflow-hidden">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-400 via-purple-500 to-transparent opacity-20 blur-3xl"></div>
 
-      {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 space-y-6">
         <img
-          src={morel1}
+          src="1.jpeg"
           alt="Marcel"
           className="w-40 h-40 rounded-full object-cover border-2 border-purple-500 shadow-md"
         />
@@ -72,12 +77,9 @@ const Home3 = () => {
         </motion.h1>
 
         <p className="text-gray-400 max-w-2xl">
-        Je suis passionné par la data science et l’intelligence artificielle. Mon objectif ? Transformer les données en solutions intelligentes et utiles.
+          Je suis passionné par la data science et l’intelligence artificielle. Mon objectif ? Transformer les données en solutions intelligentes et utiles.
         </p>
 
-
-
-        {/* CTA Buttons */}
         <div className="flex gap-4 pt-4 flex-wrap justify-center">
           <a
             href="#projects"
@@ -93,40 +95,20 @@ const Home3 = () => {
           </a>
         </div>
 
-                {/* Réseaux sociaux */}
         <div className="flex items-center justify-center gap-6 text-xl text-gray-400">
-          <a
-            href="https://linkedin.com/in/tonprofil"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-blue-500 transition"
-          >
+          <a href="https://linkedin.com/in/marcel-morel-adjalla-27a543268/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition">
             <FaLinkedin />
           </a>
-          <a
-            href="mailto:ton.email@example.com"
-            className="hover:text-red-400 transition"
-          >
+          <a href="mailto:moreladjalla@gmail.com" className="hover:text-red-400 transition">
             <FaEnvelope />
           </a>
-          <a
-            href="https://github.com/tonprofil"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-gray-200 transition"
-          >
+          <a href="https://github.com/alc4ml" target="_blank" rel="noopener noreferrer" className="hover:text-gray-200 transition">
             <FaGithub />
           </a>
-          <a
-            href="https://discordapp.com/users/tonID"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-indigo-400 transition"
-          >
+          <a href="https://discordapp.com/users/marceladjalla" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-400 transition">
             <FaDiscord />
           </a>
         </div>
-        
       </div>
     </section>
   );
