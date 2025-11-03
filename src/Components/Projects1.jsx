@@ -35,12 +35,47 @@ const projects = [
     github: 'yes'
   },
   {
+    date: "Apr 2025",
+    title: "Distributed File Download System",
+    description:
+      "Designed and implemented a distributed system that allows multiple clients to download a file in parallel from a central server. The project simulates network failures and delegation between clients to ensure fault tolerance and optimize download efficiency. Developed in a three-person team",
+    tools: ["Java", "Threads", "Sockets", "ProcessBuilder"],
+    github: "",
+  },
+  {
+    date: "Mar – May 2025",
+    title: "ActiLife – Smart Health Tracking App",
+    description:
+      "Developed a mobile application for health and wellness monitoring, including step tracking, medication reminders, sleep and hydration alerts, and personalized sports planning. The project followed Agile methodology and emphasized team collaboration, modular design, and user-centered development. Developed in four-person team",
+    tools: ["Java", "XML", "Android Studio", "Agile Methodology"],
+    github: "",
+  },
+    
+  {
+    date: "Dec 2024",
+    title: "Movie Recommendation System Based on User Similarity",
+    description:
+      "Built a movie recommendation engine using the Annoy library to compute user similarity and generate personalized suggestions efficiently from large datasets. Developed in a pair team",
+    tools: ["Python", "Annoy"],
+    github: "",
+  },
+  {
     date: "Apr 2024",
     title: "Customer Segmentation and Recommendation",
     description:
-      "Clustering customers using K-Means with recommendation logic based on similarity.",
+      "Clustering customers using K-Means with recommendation logic based on similarity. Developed in a pair team",
     tools: ["NumPy", "Pandas"],
+    github: "",
   },
+  {
+    date: "Dec 2023 – Feb 2024",
+    title: "Crisis Management Multi-Agent System",
+    description:
+      "Developed a crisis management simulation system using the GAMA platform. Modeled agents representing humans, robots, and coordinators to manage emergencies dynamically through collaboration, resource allocation, and 3D visualization. Developed in a pair team",
+    tools: ["GAMA Platform", "GAIA Methodology", "LaTeX"],
+    github: "",
+  },
+  
 ];
 
 const containerVariants = {

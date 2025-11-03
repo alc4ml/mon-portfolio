@@ -21,7 +21,7 @@ const ContactSection = () => {
     e.preventDefault();
     try {
       await axios.post("http://localhost:8000/contact", formData);
-      setStatus("Message sent successfully ✅");
+      setStatus("Dont use this form ; text me by email ");
       setFormData({
         full_name: "",
         email: "",
@@ -30,7 +30,7 @@ const ContactSection = () => {
         message: "",
       });
     } catch (error) {
-      setStatus("Error sending message ❌");
+      setStatus("Dont use this form ; text me by email ");
     }
   };
 
@@ -53,7 +53,7 @@ const ContactSection = () => {
               📩 moreladjalla@gmail.com
             </a>
           </p>
-          <p className="text-gray-400">or leave me a message</p>
+          <p className="text-gray-400">Don't use the form below.</p>
         </div>
 
         {/* Formulaire */}
