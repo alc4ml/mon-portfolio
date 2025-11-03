@@ -8,6 +8,6 @@ export default defineConfig({
     port: 5173,
     strictPort: true,
     allowedHosts: 'all', // facultatif
-    origin: 'https://87f81196f7b4.ngrok-free.app', // 👈 lien ngrok complet ici
+    origin: 'https://3f595f43fbcb.ngrok-free.app', // 👈 lien ngrok complet ici
   },
 })

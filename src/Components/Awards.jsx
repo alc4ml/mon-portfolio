@@ -5,28 +5,28 @@ import { FaCheckCircle } from "react-icons/fa";
 const Awards = () => {
   const distinctions = [
     {
-      title: "Bourse d’excellence EUR M&CS – Sorbonne Paris Nord",
-      year: "2024-2026",
+      title: "EUR M&CS Excellence Scholarship – Sorbonne Paris Nord",
+      year: "2024–2026",
       description:
-        "Attribuée par l'École Universitaire de Recherche Mathématiques et Informatique pour des résultats académiques d’excellence. Elle permet l’accès à des formations avancées en IA et mathématiques appliquées au sein de l’Institut Galilée.",
+        "Awarded by the Graduate School of Mathematics and Computer Science (EUR M&CS) for outstanding academic performance. It provides access to advanced training in computer science and applied mathematics within the Institut Galilée.",
     },
     {
-      title: "Bourse d’excellence Fondation Vallet",
-      year: "2021 – 2023",
+      title: "Vallet Foundation Excellence Scholarship",
+      year: "2021–2023",
       description:
-        "Financée par la Fondation Vallet, cette bourse est octroyée aux meilleurs étudiants du Bénin sur des critères stricts de mérite académique et de performance continue.",
+        "Funded by the Vallet Foundation, this scholarship is awarded to the best students in Benin at the national Baccalaureate level, based on strict academic merit and consistent excellence.",
     },
     // {
-    //   title: "Bourse de la Direction des Bourses du Bénin",
-    //   year: "2021 – 2023",
+    //   title: "National Scholarship – Benin Scholarship Directorate",
+    //   year: "2021–2023",
     //   description:
-    //     "Bourse nationale d'excellence attribuée aux étudiants les mieux classés dans les institutions publiques, couvrant les frais de formation pour l’ensemble du cursus universitaire.",
+    //     "A national excellence scholarship awarded to the highest-ranking students in public institutions, covering tuition fees for the entire university program.",
     // },
     {
-      title: "12ᵉ du Bénin au Baccalauréat 2020 (série C)",
+      title: "12th in Benin – Baccalaureate 2020",
       year: "2020",
       description:
-        "Classé parmi les 0,02 % meilleurs bacheliers du pays, avec la 9ᵉ place nationale dans la série scientifique C. Cette distinction reflète un niveau élevé en mathématiques, physique et sciences fondamentales.",
+        "Ranked among the top 0.02% of high school graduates nationwide, with the 9th position in the scientific track C. This distinction shows a strong background in mathematics, physics, and fundamental sciences.",
     },
   ];
 
@@ -48,7 +48,7 @@ const Awards = () => {
     <section className="bg-[#111132] text-white pt-0 px-0 md:px-0">
       <div className="max-w-screen-xl mx-auto space-y-10">
         <h2 className="text-3xl font-bold text-left font-heading">
-          Distinctions & Bourses
+          Awards & Scholarships
         </h2>
 
         <motion.div

@@ -2,11 +2,11 @@ import React from "react";
 
 const experience = [
   {
-    role: "Professeur particulier en Mathématiques",
+    role: "Private Math Tutor",
     company: "Complétude",
-    date: "Janvier 2025 – Aujourd’hui",
+    date: "January 2025 – Present",
     description:
-      "Accompagnement individualisé d’élèves de lycée en mathématiques : préparation aux examens, renforcement des notions clés et stratégies de réussite.",
+      "Provided personalized tutoring to high school students in mathematics: exam preparation, reinforcement of key concepts, and development of problem-solving strategies.",
   },
 ];
 
@@ -15,7 +15,7 @@ const Experience = () => {
     <section className="bg-[#111132] text-white pt-6 pb-0 px-0 md:px-0 sm:px-0">
       <div className="max-w-screen-xl mx-auto">
         <h2 className="text-3xl font-semibold text-left font-heading mb-6">
-          Expérience
+          Experience
         </h2>
 
         <div className="space-y-8">

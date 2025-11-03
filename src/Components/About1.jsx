@@ -47,7 +47,7 @@ const About1 = () => {
             <h2 className="text-3xl md:text-4xl font-bold leading-snug">
               I am <span className="font-magiestra">Marcel Morel Adjalla</span>
             </h2>
-            <div className="text-white text-lg text-left max-w-9xl  leading-relaxed">
+            <div className="text-white text-lg text-left max-w-9xl text-justify  leading-relaxed">
               My academic background in a few words? <br /><br />
               Preparatory classes at the Institute of Mathematics and Physical Sciences (IMSP),
               followed by a specialized Bachelor’s degree in Computer Science. <br /><br />
@@ -63,6 +63,9 @@ const About1 = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-[#0b0b2b] hover:bg-blue-700 px-6 py-3 rounded-md text-sm font-medium transition"
+              onClick={() => {
+                document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
+              }}
             >
               Lets Talk
             </motion.button>

@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub, FaEnvelope, FaDiscord } from "react-icons/fa";
 
-const roles = ["Data Scientist", "Research Scientist", "Machine Learning Engineer"];
+const roles = ["Data Scientist", "Aspiring Research Scientist", "Machine Learning Engineer"];
 
 const Home3 = () => {
   const [index, setIndex] = React.useState(0);
@@ -77,7 +77,8 @@ const Home3 = () => {
         </motion.h1>
 
         <p className="text-gray-400 max-w-2xl">
-          Je suis passionné par la data science et l’intelligence artificielle. Mon objectif ? Transformer les données en solutions intelligentes et utiles.
+        I’m passionate about data science and artificial intelligence.
+        My goal is to turn data into smart and useful solutions.
         </p>
 
         <div className="flex gap-4 pt-4 flex-wrap justify-center">

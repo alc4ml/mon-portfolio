@@ -5,14 +5,14 @@ const certifications = [
   {
     title: "LLM Engineering: Master AI, LLMs and Agents",
     description:
-      "Maîtriser les LLMs en créant 8 applications d’IA en 8 semaines — Udemy (2025)",
+      "In progress — Mastering Large Language Models by building 8 AI applications in 8 weeks — Udemy (2025)",
   },
   {
-    title: "Deep Learning avec TensorFlow et Keras",
-    description: "MasterClass Python — Udemy (2025)",
+    title: "Deep Learning with TensorFlow and Keras",
+    description: "In progress — Python MasterClass — Udemy (2025)",
   },
   {
-    title: "Programmer en Python pour la Data Science de A à Z",
+    title: "Python Programming for Data Science – From A to Z",
     description: "Udemy (2023)",
   },
 ];
@@ -57,9 +57,7 @@ const Certifications = () => {
           {certifications.map((cert, index) => (
             <motion.div key={index} variants={itemVariants}>
               <p className="text-white font-semibold">{cert.title}</p>
-              <p className="text-gray-400">
-                {cert.description}
-              </p>
+              <p className="text-gray-400">{cert.description}</p>
             </motion.div>
           ))}
         </motion.div>
