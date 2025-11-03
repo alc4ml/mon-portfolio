@@ -86,13 +86,13 @@ const Home3 = () => {
             href="#projects"
             className="px-6 py-3 bg-gradient-to-br from-green-400 to-blue-500 hover:text-white text-white rounded-full shadow-md hover:opacity-90 transition"
           >
-            Voir mes projets
+            See my projects
           </a>
           <a
             href="#contact"
             className="px-6 py-3 border border-blue-400 text-blue-300 rounded-full hover:bg-blue-500 hover:text-white transition"
           >
-            Me contacter
+            Contact me
           </a>
         </div>
 

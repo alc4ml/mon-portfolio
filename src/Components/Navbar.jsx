@@ -20,8 +20,8 @@ const Navbar = () => {
 
         {/* Liens */}
         <nav className="flex items-center gap-6 text-sm text-gray-300 relative">
-          <a href="#projects" className="hover:text-white transition">Projets</a>
-          <a href="#skills" className="hover:text-white transition">Compétences</a>
+          <a href="#projects" className="hover:text-white transition">Projects</a>
+          <a href="#skills" className="hover:text-white transition">Skills</a>
           <a href="#contact" className="hover:text-white transition">Contact</a>
 
           {/* Bouton light mode */}
