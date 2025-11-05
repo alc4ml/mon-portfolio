@@ -48,16 +48,16 @@ const About1 = () => {
               I am <span className="font-magiestra">Marcel Morel Adjalla</span>
             </h2>
             <div className="text-white text-lg text-left max-w-9xl text-justify  leading-relaxed">
-              My academic background in a few words? <br /><br />
-              Preparatory classes at the Institute of Mathematics and Physical Sciences (IMSP),
-              followed by a specialized Bachelor’s degree in Computer Science. <br /><br />
-              After that, I joined the Institut Galilée at Université Sorbonne Paris Nord
-              thanks to the Excellence Scholarship from the EUR in Mathematics and Computer Science (EUR M&CS).<br /><br />
-              During my first year of the Master’s program in Computer Science,
-              I strengthened both my technical and theoretical foundations.
-              Following this experience, my growing interest in applied research;
-              particularly in Artificial Intelligence and Data Science naturally led me to
-              pursue the Master in Data Mathematics, which I am currently enrolled in.
+            Born in Benin in 2003, I grew up at a time when artificial intelligence was starting to inspire dreams.
+After earning my scientific baccalaureate in 2020, I joined preparatory classes where mathematics and physics taught me both humility and rigor.
+
+I then pursued a Bachelor’s and a first year master degree in Data Science, before joining the Institut Galilée at Université Sorbonne Paris Nord with an Excellence Scholarship from the Graduate School in Mathematics and Computer Science.
+There, i did a first year of master in Computer Science.
+
+But curiosity and a growing interest in the intersection between mathematics and AI, led me to shift my path toward applied mathematics and data science.
+Today, I’m pursuing a Master’s in Data Mathematics, where I combine statistical learning, deep learning, and applied research to explore how data and intelligence can help solve real-world problems.
+
+My journey is built on a blend of mathematics, computer science, and a good dose of curiosity ; the driving force behind everything I do.
             </div>
             <motion.button
               whileHover={{ scale: 1.05 }}
