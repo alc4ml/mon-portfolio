@@ -93,13 +93,13 @@ const ContactSection = () => {
             />
           </div>
           <textarea
-            name="message"
-            placeholder="Your Message"
-            rows="6"
-            value={formData.message}
-            onChange={handleChange}
-            className="w-full bg-transparent border border-blue-400 text-white px-4 py-2 rounded resize-none focus:outline-none focus:ring-1 focus:ring-blue-500"
-          ></textarea>
+  name="message"
+  placeholder="Your Message"
+  rows="4"
+  value={formData.message}
+  disabled
+  className="w-full bg-transparent border border-blue-400 text-white px-4 py-2 rounded resize-none opacity-50 cursor-not-allowed"
+></textarea>
           <div className="text-center">
             <button
               type="submit"

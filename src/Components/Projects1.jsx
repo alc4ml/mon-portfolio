@@ -9,7 +9,7 @@ const projects = [
     description:
       "Comparison of classical ML models (SVM, Random Forest, MLP) for tumor classification from tabular data.",
     tools: ["Scikit-learn", "PyTorch", "Git"],
-    github: "yes",
+    github: "https://github.com/alc4ml/Prediction-du-type-de-cancer",
   },
   {
     date: "Sept 2025",
@@ -17,7 +17,7 @@ const projects = [
     description:
       "Using PCA and Isolation Forest to detect suspicious financial transactions.",
     tools: ["Scikit-learn", "Pandas", "Git"],
-    github: "yes",
+    github: "https://github.com/alc4ml/Detection-de-fraudes",
   },
   {
     date: "Aug 2025 – Oct 2025",
@@ -32,7 +32,7 @@ const projects = [
     description:
       "Exploration of DTM-based filtrations for topological vectorization and ML classification.",
     tools: ["Scikit-learn", "GUDHI", "Pandas"],
-    github: 'yes'
+    github: "https://github.com/alc4ml/TDA-DTM-based-filtration",
   },
   {
     date: "Apr 2025",
@@ -50,7 +50,7 @@ const projects = [
     tools: ["Java", "XML", "Android Studio", "Agile Methodology"],
     github: "",
   },
-    
+
   {
     date: "Dec 2024",
     title: "Movie Recommendation System Based on User Similarity",
@@ -75,7 +75,6 @@ const projects = [
     tools: ["GAMA Platform", "GAIA Methodology", "LaTeX"],
     github: "",
   },
-  
 ];
 
 const containerVariants = {
@@ -102,12 +101,17 @@ const cardVariants = {
 
 const Projects1 = () => {
   return (
-    <section id="projects" className="bg-[#111132] text-white pt-11 pb-5 px-0 md:px-0 sm:px-0">
+    <section
+      id="projects"
+      className="bg-[#111132] text-white pt-11 pb-5 px-0 md:px-0 sm:px-0"
+    >
       <div className="max-w-screen-xl mx-auto">
         <div className="flex justify-between items-center mb-12">
-          <h2 className="text-3xl font-semibold text-left font-heading mb-6">Projects</h2>
+          <h2 className="text-3xl font-semibold text-left font-heading mb-6">
+            Projects
+          </h2>
         </div>
-        
+
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -132,7 +136,9 @@ const Projects1 = () => {
               {/* Content */}
               <div className="relative z-10">
                 <div className="flex justify-between items-center mb-2">
-                  <h4 className="text-lg font-semibold text-white">{proj.title}</h4>
+                  <h4 className="text-lg font-semibold text-white">
+                    {proj.title}
+                  </h4>
                   <span className="text-xs text-gray-400">{proj.date}</span>
                 </div>
                 <p className="text-gray-300 text-sm mb-4">{proj.description}</p>
@@ -147,11 +153,11 @@ const Projects1 = () => {
                   ))}
                 </div>
               </div>
-                  
+
               {/* GitHub Icon (if applicable) */}
-              {proj.github === "yes" && (
+              {proj.github && (
                 <a
-                  href="#projects"
+                  href={proj.github}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="absolute bottom-3 right-3 text-gray-400 hover:text-white transition"

@@ -59,7 +59,7 @@ const Home3 = () => {
 
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 space-y-6">
         <img
-          src="1.jpeg"
+          src="3.jpeg"
           alt="Marcel"
           className="w-40 h-40 rounded-full object-cover border-2 border-purple-500 shadow-md"
         />
