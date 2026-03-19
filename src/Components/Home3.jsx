@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub, FaEnvelope, FaDiscord } from "react-icons/fa";
 
-const roles = ["Data Scientist", "Aspiring Research Scientist", "Machine Learning Engineer"];
+const roles = ["Data Scientist", "Aspiring Research Scientist", "AI Research Engineer"];
 
 const Home3 = () => {
   const [index, setIndex] = React.useState(0);
