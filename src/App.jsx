@@ -13,6 +13,7 @@ import Experience from "./Components/Experience";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import ContactSection from "./Components/ContactSection";
+import ResearchPapers from "./Components/ResearchPapers";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <hr className="my-16 border-gray-700" />
           <Education2 />
           <Experience />
+          {/* <ResearchPapers /> */}
           <Projects1 />
           <Skills />
           <Awards />
