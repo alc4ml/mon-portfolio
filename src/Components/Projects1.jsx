@@ -4,20 +4,29 @@ import { FaGithub } from "react-icons/fa";
 
 const projects = [
   {
-    date: "Oct 2025",
-    title: "Breast Cancer Type Prediction",
-    description:
-      "Comparison of classical ML models (SVM, Random Forest, MLP) for tumor classification from tabular data.",
-    tools: ["Scikit-learn", "PyTorch", "Git"],
-    github: "https://github.com/alc4ml/Prediction-du-type-de-cancer",
+  date: "Jan 2026",
+  title: "Stochastic Event-Generation Simulator for Aircraft Systems",
+  description:
+    "Development of an open-source stochastic simulator modeling the life cycle of aeronautical components for dynamic risk assessment and maintenance decision support. Contribution to the ACCORD project (Safran – Polytechnique Montréal).",
+  tools: ["Python", "NumPy", "Git"],
+  github: "https://github.com/alc4ml/ProjetM2D2526",
+  publication: "CM2026, British Institute for Non-Destructive Testing — Len Gelman Award",
   },
   {
-    date: "Sept 2025",
-    title: "Financial Anomaly Detection",
+    date: "Oct 2025",
+    title: "Stroke Risk Prediction from Tabular Data",
     description:
-      "Using PCA and Isolation Forest to detect suspicious financial transactions.",
-    tools: ["Scikit-learn", "Pandas", "Git"],
-    github: "https://github.com/alc4ml/Detection-de-fraudes",
+      "Comparison of classical ML models (SVM, XGBoost, MLP) for stroke risk prediction from tabular data.",
+    tools: ["Scikit-learn", "PyTorch", "Git"],
+    github: "https://github.com/alc4ml/stroke_risk_prediction",
+  },
+  {
+  date: "Dec 2025",
+  title: "Nonlinear Dimensionality Reduction & Manifold Learning",
+  description:
+    "Comparison of PCA, LLE, and t-SNE on nonlinear datasets to study manifold unfolding and local structure preservation.",
+  tools: ["Python", "Scikit-learn", "NumPy", "Matplotlib"],
+  github: "https://github.com/alc4ml/SEM-Project",
   },
   {
     date: "Aug 2025 – Oct 2025",
@@ -40,7 +49,7 @@ const projects = [
     description:
       "Designed and implemented a distributed system that allows multiple clients to download a file in parallel from a central server. The project simulates network failures and delegation between clients to ensure fault tolerance and optimize download efficiency. Developed in a three-person team",
     tools: ["Java", "Threads", "Sockets", "ProcessBuilder"],
-    github: "",
+    github: "https://github.com/anisbl13/Projet_java",
   },
   {
     date: "Mar – May 2025",
@@ -48,33 +57,11 @@ const projects = [
     description:
       "Developed a mobile application for health and wellness monitoring, including step tracking, medication reminders, sleep and hydration alerts, and personalized sports planning. The project followed Agile methodology and emphasized team collaboration, modular design, and user-centered development. Developed in four-person team",
     tools: ["Java", "XML", "Android Studio", "Agile Methodology"],
-    github: "",
+    github: "https://github.com/Erreur40A/ActiLife",
   },
 
-  {
-    date: "Dec 2024",
-    title: "Movie Recommendation System Based on User Similarity",
-    description:
-      "Built a movie recommendation engine using the Annoy library to compute user similarity and generate personalized suggestions efficiently from large datasets. Developed in a pair team",
-    tools: ["Python", "Annoy"],
-    github: "",
-  },
-  {
-    date: "Apr 2024",
-    title: "Customer Segmentation and Recommendation",
-    description:
-      "Clustering customers using K-Means with recommendation logic based on similarity. Developed in a pair team",
-    tools: ["NumPy", "Pandas"],
-    github: "",
-  },
-  {
-    date: "Dec 2023 – Feb 2024",
-    title: "Crisis Management Multi-Agent System",
-    description:
-      "Developed a crisis management simulation system using the GAMA platform. Modeled agents representing humans, robots, and coordinators to manage emergencies dynamically through collaboration, resource allocation, and 3D visualization. Developed in a pair team",
-    tools: ["GAMA Platform", "GAIA Methodology", "LaTeX"],
-    github: "",
-  },
+
+
 ];
 
 const containerVariants = {
