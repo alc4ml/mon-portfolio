@@ -32,7 +32,7 @@ function App() {
           <Skills />
           <Awards />
           <CertificationsSection />
-          <ResearchPapers />
+          {/* <ResearchPapers /> */}
           <hr className="my-16 border-gray-700" />
           <ContactSection />
         </div>
